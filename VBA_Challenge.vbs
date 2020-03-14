@@ -21,8 +21,8 @@ TickerOpen = 0
 TickerClose = 0
 
 'Set initial variables to keep track of price changes
-Dim YearChange As Long
-Dim PctChange As Long
+Dim YearChange As Double
+Dim PctChange As Double
 YearChange = 0
 PctChange = 0
 
@@ -143,7 +143,6 @@ Sheets("TickerData").Range("C1").Value = "Ticker Close"
             ws.Range("J:J").Style = "Currency"
             ws.Range("K:K").Style = "Percent"
             ws.Range("Q2:Q3").Style = "Percent"
-            ws.Range("Q4").Style = "Currency"
             ws.Range("I:Q").HorizontalAlignment = xlCenter
             Columns("I:Q").Select
             Selection.EntireColumn.AutoFit
